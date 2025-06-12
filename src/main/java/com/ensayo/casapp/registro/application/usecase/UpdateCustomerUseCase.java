@@ -1,9 +1,7 @@
 package com.ensayo.casapp.registro.application.usecase;
 
 import org.springframework.stereotype.Service;
-
 import com.ensayo.casapp.registro.domain.models.Customer;
-
 import lombok.RequiredArgsConstructor;
 
 @Service

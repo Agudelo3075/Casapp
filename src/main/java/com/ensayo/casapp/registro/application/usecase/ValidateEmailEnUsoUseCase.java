@@ -1,10 +1,8 @@
 package com.ensayo.casapp.registro.application.usecase;
 
 import org.springframework.stereotype.Service;
-
 import com.ensayo.casapp.registro.domain.exception.UserAlreadyRegisteredException;
 import com.ensayo.casapp.registro.domain.port.out.IRepositoryPort;
-
 import lombok.RequiredArgsConstructor;
 
 @Service
