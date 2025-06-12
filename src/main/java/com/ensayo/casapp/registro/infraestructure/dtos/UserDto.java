@@ -44,5 +44,5 @@ public class UserDto {
     )
     protected String phone;
 
-
+    protected String rol;
 }

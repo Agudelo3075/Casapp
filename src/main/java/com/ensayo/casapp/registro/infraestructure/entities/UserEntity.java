@@ -32,8 +32,11 @@ public class UserEntity {
     @Column(name = "name", nullable = false)
     protected String name;
 
-    @Column(name = "lastName", nullable = false, unique = true)
+    @Column(name = "lastName", nullable = false)
     protected String lastName;
+
+    @Column(name = "email", nullable = false, unique = true)
+    protected String email;
 
     @Column(name = "password", nullable = false)
     protected String password;
@@ -44,4 +47,7 @@ public class UserEntity {
     @Column(name = "rol", nullable = false)
     protected String rol;
 
+    
 }
+
+
