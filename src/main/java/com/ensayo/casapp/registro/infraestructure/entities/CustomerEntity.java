@@ -9,14 +9,14 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
+//import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
 @Entity
 @Table(name = "customers")
 @Getter
 @Setter
-@ToString(callSuper = true)
+//@ToString(callSuper = true)
 @SuperBuilder
 @NoArgsConstructor
 @PrimaryKeyJoinColumn(name = "id")
