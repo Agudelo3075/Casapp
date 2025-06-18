@@ -1,15 +1,16 @@
 package com.ensayo.casapp.registro.infraestructure.mappers;
 
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.MappingTarget;
-
 import com.ensayo.casapp.registro.domain.models.Customer;
 import com.ensayo.casapp.registro.infraestructure.dtos.CustomerDto;
 import com.ensayo.casapp.registro.infraestructure.entities.CustomerEntity;
 
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+import org.mapstruct.MappingTarget;
+
 @Mapper(componentModel = "spring")
 public interface CustomerMapper {
+
     @Mapping(target = "id", ignore = true)
     CustomerEntity toEntity(Customer customer);
 

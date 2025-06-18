@@ -1,12 +1,11 @@
 package com.ensayo.casapp.registro.infraestructure.mappers;
 
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.MappingTarget;
-
 import com.ensayo.casapp.registro.domain.models.Admin;
 import com.ensayo.casapp.registro.infraestructure.dtos.AdminDto;
 import com.ensayo.casapp.registro.infraestructure.entities.AdminEntity;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+import org.mapstruct.MappingTarget;
 
 @Mapper(componentModel = "spring")
 public interface AdminMapper {
@@ -24,4 +23,5 @@ public interface AdminMapper {
     void updateEntityFromDomain(Admin admin, @MappingTarget AdminEntity entity);
     
     void updateDomainFromDto(AdminDto dto, @MappingTarget Admin admin);
+
 }

@@ -3,6 +3,7 @@ package com.ensayo.casapp.registro.application.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
 
 import com.ensayo.casapp.registro.domain.models.User;
 import com.ensayo.casapp.registro.domain.port.in.IDelete;
@@ -13,7 +14,7 @@ import com.ensayo.casapp.registro.domain.port.in.IUpdate;
 
 import lombok.RequiredArgsConstructor;
 
-//@Service
+@Service
 @RequiredArgsConstructor
 public class RegisterService implements IDelete,IFindByFilters,ISave, IFindById, IUpdate{
 
